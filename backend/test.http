@@ -1,0 +1,17 @@
+### LOGIN
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### ACCESS SECURE DATA
+GET http://127.0.0.1:8000/secure-data
+Authorization: Bearer VOTRE_TOKEN_ICI
+
+
+### ACCESS SECURE DATA
+GET http://127.0.0.1:8000/secure-data
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NTkzNTIxMH0.oF_47ymaSOj6PVeDwsnAzFgqDuEWwbdue_icTd6m5RY
